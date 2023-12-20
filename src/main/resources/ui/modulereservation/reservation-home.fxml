@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.modulereservation.ReservationHomeController">
+   <children>
+      <BorderPane layoutX="219.0" layoutY="76.0" style="-fx-background-color: F3F8FF;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
+         <center>
+            <VBox BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="60.0" left="15.0" right="15.0" top="50.0" />
+               </BorderPane.margin>
+               <children>
+                  <ListView fx:id="reservationsListView" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Details" onAction="#detailWindow" />
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <Pane prefHeight="44.0" prefWidth="560.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addWindow" prefHeight="25.0" prefWidth="54.0" text="Add" />
+                  <Button layoutX="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Edit" />
+                  <Button layoutX="129.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Delete" onAction="#deleteRes" />
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
 </AnchorPane>

@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="350" minWidth="400" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.modulereservation.ReservationHomeController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="13.0" layoutY="10.0" prefHeight="374.0" prefWidth="576.0" spacing="10.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="10.0">
+         <!-- Date Debut -->
+         <HBox spacing="10.0">
+            <Label text="Date Debut" />
+            <DatePicker fx:id="DateDeb" />
+         </HBox>
 
+         <!-- Date Fin -->
+         <HBox spacing="10.0">
+            <Label text="Date Fin" />
+            <DatePicker fx:id="DateFin" />
+         </HBox>
+
+         <!-- Nombre de passager -->
+         <HBox spacing="10.0">
+            <Label text="Nombre de passager" />
+            <Slider fx:id="slider" blockIncrement="1.0" max="10.0" min="1.0" value="1.0" />
+            <Label fx:id="sliderValueLabel" />
+         </HBox>
+
+         <!-- Choisir offre -->
+         <VBox alignment="CENTER_LEFT" spacing="5.0">
+            <Label text="Choisir offre" />
+            <TextField promptText="Search offre" />
+            <ListView prefHeight="122.0" prefWidth="277.0" />
+         </VBox>
+
+         <!-- Buttons -->
+         <HBox alignment="CENTER_RIGHT" spacing="10.0">
+            <Button onAction="#addCancel" text="Cancel" />
+            <Button onAction="#addReservation" text="Apply" />
+         </HBox>
+      </VBox>
+   </children>
 </AnchorPane>

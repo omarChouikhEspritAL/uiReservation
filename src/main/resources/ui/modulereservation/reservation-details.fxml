@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.modulereservation.ReservationHomeController">
+
+    <VBox alignment="CENTER" prefHeight="326.0" prefWidth="277.0" spacing="10" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="5.0">
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Reservation Details" />
+
+        <GridPane hgap="10" prefHeight="288.0" prefWidth="285.0" vgap="5">
+            <Label text="ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label fx:id="idLabel" text="empty content" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Date Début:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label fx:id="dateDebutLabel" text="empty content" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Date Fin:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label fx:id="dateFinLabel" text="empty content" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Nombre de Passages:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Label fx:id="nbrPassLabel" text="empty content" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label text="Offre ID:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Label fx:id="idOffreLabel" text="empty content" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+            <Label text="Offre Details:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <VBox fx:id="offreDetailsBox" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                <Label text="Pays:" />
+                <Label fx:id="paysLabel" text="empty content" />
+                <Label text="Cité:" />
+                <Label fx:id="citeLabel" text="empty content" />
+                <Label text="Lieu:" />
+                <Label fx:id="lieuLabel" text="empty content" />
+                <Label text="Date:" />
+                <Label fx:id="dateOffreLabel" text="empty content" />
+                <Label text="Prix:" />
+                <Label fx:id="prixLabel" text="empty content" />
+            </VBox>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+
+        </GridPane>
+    </VBox>
 
 </AnchorPane>

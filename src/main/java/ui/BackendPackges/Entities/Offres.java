@@ -1,4 +1,4 @@
-package com.example.journeywiseguijaxafx.BackendPackges.Entities;
+package ui.BackendPackges.Entities;
 
 
 

@@ -1,8 +1,8 @@
-package com.example.journeywiseguijaxafx.BackendPackges.Services;
+package ui.BackendPackges.Services;
 
-import com.example.journeywiseguijaxafx.BackendPackges.Entities.Offres;
-import com.example.journeywiseguijaxafx.BackendPackges.Utils.DataSource;
 
+import ui.BackendPackges.Entities.Offres;
+import ui.BackendPackges.Utils.DataSource;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

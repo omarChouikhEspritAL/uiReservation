@@ -1,4 +1,4 @@
-package com.example.journeywiseguijaxafx.BackendPackges.Utils;
+package ui.BackendPackges.Utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

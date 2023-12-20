@@ -1,4 +1,4 @@
-package com.example.journeywiseguijaxafx.BackendPackges.Services;
+package ui.BackendPackges.Services;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
